@@ -63,7 +63,7 @@ h3 {
   font-size:20px;
 }
 sup {
-  font-size:.66em;
+  font-size:15px;
   line-height:0;
   vertical-align:super;
 }
@@ -144,7 +144,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
   margin-left:1px;
 }
 .affiliations {
-  font-size:14px;
+  font-size:15px;
   line-height:1.75;
   margin-top:9px;
   color:#606861;
@@ -157,7 +157,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
   margin-right:2px;
 }
 .author-notes {
-  font-size:12px;
+  font-size:15px;
   color:#7b827d;
   margin:8px 0 0;
 }
@@ -212,7 +212,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
   transform:none;
 }
 .soon {
-  font-size:11px;
+  font-size:15px;
   color:#737c72;
 }
 .hero-message {
@@ -281,7 +281,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
   flex-wrap:wrap;
   gap:27px;
   padding:31px 0 27px;
-  font-size:13px;
+  font-size:15px;
 }
 .section-nav a {
   color:#69776d;
@@ -360,11 +360,11 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
 .metric-name {
   display:block;
   font-weight:600;
-  font-size:14px;
+  font-size:15px;
   margin:0 0 16px;
 }
 .metric-name>span {
-  font-size:11px;
+  font-size:15px;
   font-weight:400;
   color:var(--muted);
   margin-left:5px;
@@ -375,19 +375,19 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
   gap:12px;
 }
 .metric-label {
-  font-size:12px;
+  font-size:15px;
   color:var(--muted);
 }
 .metric-detail {
   display:block;
   color:var(--muted);
-  font-size:11px;
+  font-size:15px;
   margin-top:12px;
 }
 .metric-footnote {
   text-align:center;
   color:#7a837b;
-  font-size:11px;
+  font-size:15px;
   margin:25px 24px 0;
 }
 .section-intro {
@@ -402,21 +402,28 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
 }
 .bspline-reference {
   margin:0 0 28px;
-  padding-left:14px;
-  border-left:2px solid var(--accent);
-  font-size:14px;
+  padding:12px 16px;
+  border:1px solid var(--line);
+  border-left:4px solid var(--accent);
+  border-radius:8px;
+  background:var(--accent-light);
+  font-size:15px;
   line-height:1.7;
+}
+.bspline-reference strong {
+  color:var(--accent);
 }
 .bspline-reference a {
   font-weight:600;
   text-decoration:underline;
   text-underline-offset:3px;
+  color:var(--accent);
 }
 .motivation {
   margin-bottom:52px;
 }
 .motivation p,.result-discussion,.result-limitation,.evaluation-setting,.horizon-study p,.ablation-study p {
-  font-size:14px;
+  font-size:15px;
   line-height:1.85;
   color:var(--muted);
 }
@@ -434,7 +441,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
 }
 .video-note {
   color:var(--muted);
-  font-size:11px;
+  font-size:15px;
   margin:0 0 14px;
 }
 .method-steps {
@@ -446,7 +453,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
 .step-label {
   display:block;
   color:var(--accent);
-  font-size:10px;
+  font-size:15px;
   font-weight:700;
   letter-spacing:0;
   margin-bottom:13px;
@@ -458,7 +465,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
   margin-bottom:11px;
 }
 .method-steps p {
-  font-size:14px;
+  font-size:15px;
   color:var(--muted);
   line-height:1.8;
   margin:0;
@@ -495,7 +502,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
   object-fit:contain;
 }
 .figure-panel figcaption {
-  font-size:12px;
+  font-size:15px;
   color:var(--muted);
   text-align:center;
   margin-top:18px;
@@ -532,7 +539,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
   border-radius:9px;
   background:linear-gradient(135deg,#2b6d60,#659071);
   color:#fff;
-  font-size:12px;
+  font-size:15px;
   font-weight:650;
   font-variant-numeric:tabular-nums;
 }
@@ -541,7 +548,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
   letter-spacing:0;
 }
 .task-tag {
-  font-size:9px;
+  font-size:15px;
   letter-spacing:0;
   text-transform:uppercase;
   font-weight:600;
@@ -554,7 +561,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
 }
 .task-description {
   color:var(--muted);
-  font-size:14px;
+  font-size:15px;
   margin:8px 0 0;
   padding-left:48px;
 }
@@ -579,7 +586,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
   justify-content:flex-end;
   gap:8px;
   color:var(--muted);
-  font-size:12px;
+  font-size:15px;
   margin:-6px 0 12px;
 }
 .playback-control select {
@@ -606,7 +613,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
 }
 .video-grid figcaption {
   text-align:center;
-  font-size:12px;
+  font-size:15px;
   color:#6b746c;
   margin:9px 0 0;
 }
@@ -632,7 +639,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,video:focus-visible,.
 table {
   border-collapse:collapse;
   width:100%;
-  font-size:14px;
+  font-size:15px;
   white-space:nowrap;
   text-align:center;
   font-variant-numeric:tabular-nums;
@@ -646,7 +653,7 @@ thead {
 }
 thead th {
   font-weight:600;
-  font-size:13px;
+  font-size:15px;
   color:#4c5c50;
 }
 thead tr:first-child th {
@@ -655,7 +662,7 @@ thead tr:first-child th {
   padding-bottom:12px;
 }
 thead tr:nth-child(2) th {
-  font-size:11px;
+  font-size:15px;
   color:#73806f;
   font-weight:500;
   padding-top:9px;
@@ -679,7 +686,7 @@ tbody tr:last-child th,tbody tr:last-child td {
   font-weight:700;
 }
 .real-table {
-  font-size:12px;
+  font-size:15px;
   background:#fff;
 }
 .real-table th,.real-table td {
@@ -689,21 +696,21 @@ tbody tr:last-child th,tbody tr:last-child td {
   font-weight:400;
 }
 .real-table thead th {
-  font-size:12px;
+  font-size:15px;
 }
 thead tr:first-child th[colspan],tbody td:nth-child(2),tbody td:nth-child(5),.real-table tbody td:nth-child(8) {
   border-left:1px solid var(--line);
 }
 .highlight th span {
   margin-left:6px;
-  font-size:10px;
+  font-size:15px;
   padding:2px 6px;
   color:#54725a;
   background:#dcebdc;
   border-radius:4px;
 }
 .table-note {
-  font-size:11px;
+  font-size:15px;
   color:#7b857b;
   margin:13px 0 0;
   line-height:1.8;
@@ -722,7 +729,7 @@ thead tr:first-child th[colspan],tbody td:nth-child(2),tbody td:nth-child(5),.re
   background:#fff;
   border-radius:7px;
   padding:8px 12px;
-  font-size:12px;
+  font-size:15px;
   color:#526b58;
 }
 .copy-button:hover {
@@ -736,19 +743,19 @@ thead tr:first-child th[colspan],tbody td:nth-child(2),tbody td:nth-child(5),.re
   background:#f0f3ed;
   overflow-x:auto;
   color:#4e5c4e;
-  font:12px/1.85 "SFMono-Regular",Consolas,"Liberation Mono",monospace;
+  font:15px/1.85 "SFMono-Regular",Consolas,"Liberation Mono",monospace;
   tab-size:2;
 }
 .copy-status {
   height:18px;
   margin:6px 0 -18px;
-  font-size:12px;
+  font-size:15px;
   color:var(--accent);
 }
 footer {
   padding:31px 0 28px;
   text-align:center;
-  font-size:12px;
+  font-size:15px;
   color:#8a9189;
 }
 .footer-content {
@@ -771,7 +778,7 @@ footer {
 .back-to-top {
   display:inline-block;
   margin-top:11px;
-  font-size:11px;
+  font-size:15px;
 }
 .skip-link {
   position:absolute;
@@ -816,7 +823,7 @@ dialog::backdrop {
   justify-content:space-between;
   padding:11px 16px;
   border-bottom:1px solid var(--line);
-  font-size:12px;
+  font-size:15px;
   color:var(--muted);
 }
 .dialog-toolbar button {
@@ -842,7 +849,7 @@ dialog::backdrop {
   margin:auto;
 }
 #figure-caption {
-  font-size:13px;
+  font-size:15px;
   color:var(--muted);
   padding:0 18px 14px;
   margin:0;
@@ -868,7 +875,7 @@ body:has(dialog[open]) {
     display:none;
   }
   .affiliations {
-    font-size:12px;
+    font-size:15px;
   }
   .hero {
     padding-top:35px;
@@ -886,10 +893,10 @@ body:has(dialog[open]) {
     font-size:16px;
   }
   .metric-name {
-    font-size:12px;
+    font-size:15px;
   }
   .metric-detail {
-    font-size:10px;
+    font-size:15px;
   }
   .method-steps {
     gap:20px;
@@ -898,7 +905,7 @@ body:has(dialog[open]) {
     font-size:17px;
   }
   .method-steps p {
-    font-size:13px;
+    font-size:15px;
   }
   .method-figures {
     grid-template-columns:1fr;
@@ -910,7 +917,7 @@ body:has(dialog[open]) {
     gap:8px;
   }
   .task-tag {
-    font-size:8px;
+    font-size:15px;
   }
 }
 @media(max-width:560px) {
@@ -937,14 +944,14 @@ body:has(dialog[open]) {
     vertical-align:-3px;
   }
   .publication-authors {
-    font-size:14px;
+    font-size:15px;
     line-height:1.9;
   }
   .publication-authors span {
     margin-right:1px;
   }
   .affiliations {
-    font-size:11px;
+    font-size:15px;
     line-height:1.9;
     margin-top:12px;
   }
@@ -955,7 +962,7 @@ body:has(dialog[open]) {
     display:none;
   }
   .author-notes {
-    font-size:10px;
+    font-size:15px;
     margin-top:10px;
   }
   .author-notes span {
@@ -966,7 +973,7 @@ body:has(dialog[open]) {
     margin-top:20px;
   }
   .pill {
-    font-size:12px;
+    font-size:15px;
     height:36px;
     padding:0 12px;
     gap:6px;
@@ -976,7 +983,7 @@ body:has(dialog[open]) {
     height:14px;
   }
   .soon {
-    font-size:9px;
+    font-size:15px;
   }
   .hero-message {
     font-size:15px;
@@ -992,20 +999,20 @@ body:has(dialog[open]) {
     border-radius:9px;
   }
   .hero-figure figcaption {
-    font-size:11px;
+    font-size:15px;
     margin-top:12px;
     text-wrap:balance;
   }
   .expand-hint {
     width:21px;
     height:21px;
-    font-size:13px;
+    font-size:15px;
     right:5px;
     bottom:5px;
   }
   .section-nav {
     gap:17px;
-    font-size:11px;
+    font-size:15px;
     padding:25px 0 22px;
   }
   .section {
@@ -1048,17 +1055,17 @@ body:has(dialog[open]) {
   }
   .metric-name {
     margin-top:7px;
-    font-size:13px;
+    font-size:15px;
   }
   .metric-detail {
-    font-size:11px;
+    font-size:15px;
   }
   .metric-footnote {
-    font-size:10px;
+    font-size:15px;
     margin-top:21px;
   }
   .section-intro {
-    font-size:14px;
+    font-size:15px;
     margin-bottom:25px;
   }
   .method-steps {
@@ -1072,7 +1079,7 @@ body:has(dialog[open]) {
   }
   .step-label {
     margin-bottom:7px;
-    font-size:9px;
+    font-size:15px;
   }
   .method-steps h3 {
     font-size:18px;
@@ -1080,7 +1087,7 @@ body:has(dialog[open]) {
     margin-bottom:7px;
   }
   .method-steps p {
-    font-size:14px;
+    font-size:15px;
   }
   .method-figures {
     margin-top:25px;
@@ -1098,7 +1105,7 @@ body:has(dialog[open]) {
     min-height:0;
   }
   .figure-panel figcaption {
-    font-size:11px;
+    font-size:15px;
     margin-top:13px;
   }
   .task-list {
@@ -1115,7 +1122,7 @@ body:has(dialog[open]) {
   .task-index {
     width:30px;
     height:30px;
-    font-size:10px;
+    font-size:15px;
     border-radius:7px;
   }
   .task-header>div {
@@ -1126,13 +1133,13 @@ body:has(dialog[open]) {
   }
   .task-tag {
     display:inline-block;
-    font-size:8px;
+    font-size:15px;
     margin-top:7px;
     letter-spacing:0;
     padding:3px 7px;
   }
   .task-description {
-    font-size:12px;
+    font-size:15px;
     padding-left:0;
     margin:12px 0 0;
     line-height:1.7;
@@ -1157,23 +1164,23 @@ body:has(dialog[open]) {
     border-radius:7px;
   }
   .video-grid figcaption {
-    font-size:11px;
+    font-size:15px;
     margin-top:6px;
   }
   table {
-    font-size:12px;
+    font-size:15px;
   }
   th,td {
     padding:12px 13px;
   }
   .table-note {
-    font-size:10px;
+    font-size:15px;
   }
   .citation-heading {
     gap:10px;
   }
   .copy-button {
-    font-size:10px;
+    font-size:15px;
     padding:7px 9px;
     margin-top:1px;
   }
@@ -1182,17 +1189,17 @@ body:has(dialog[open]) {
     height:13px;
   }
   .citation-code {
-    font-size:10px;
+    font-size:15px;
     padding:16px;
   }
   .footer-content {
-    font-size:10px;
+    font-size:15px;
   }
   .dialog-image-wrap {
     padding:8px;
   }
   #figure-caption {
-    font-size:11px;
+    font-size:15px;
     padding:0 12px 12px;
   }
   .footer-divider {

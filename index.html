@@ -35,7 +35,7 @@
       </div>
       <p class="author-notes">* Equal contribution <span>† Corresponding authors</span></p>
       <div class="publication-links" aria-label="Project resources">
-        <a class="pill" href="./static/paper/splinewam.pdf?v=20260930" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8zM14 3v6h5M8 13h8M8 17h6"/></svg>Paper</a>
+        <a class="pill" href="https://arxiv.org/pdf/2609.39873" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8zM14 3v6h5M8 13h8M8 17h6"/></svg>Paper</a>
         <a class="pill" href="#real-robot"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3z"/></svg>Videos</a>
         <a class="pill" href="#method"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17c5-24 13 22 18-10"/><circle cx="3" cy="17" r="1.5"/><circle cx="21" cy="7" r="1.5"/></svg>Method</a>
         <span class="pill pill-unavailable" aria-label="Code is not yet available"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"/></svg>Code <span class="soon">coming soon</span></span>
@@ -68,7 +68,7 @@
         <div class="motivation" id="motivation"><h2 class="section-title">Motivation</h2><p>Free-space motion is smooth and predictable over longer intervals; grasping and insertion require finer resolution and frequent feedback. Fixed action chunks spend unnecessary policy calls on free-space motion yet can delay replanning near contact. For a large WAM backbone, these redundant calls also limit the throughput of shared cloud inference.</p></div>
         <h2 class="section-title" id="method-title">Method</h2>
         <p class="section-intro">Let the action representation decide <em>how far to act</em> and <em>when to replan</em>.</p>
-        <p class="bspline-reference">For an interactive introduction to B-splines, visit <a href="https://b-spline-policy.github.io/" target="_blank" rel="noopener">B-spline Policy</a>.</p>
+        <p class="bspline-reference">For an interactive introduction to B-splines, see <a href="https://b-spline-policy.github.io/#:~:text=and%20smoother%20motion.-,What%20are%20B%2Dsplines%3F,-A%20B%2Dspline" target="_blank" rel="noopener">What are B-splines?</a> or <a href="https://b-spline-policy.github.io/#:~:text=knot%20vector-,Fitting%20a%20B%2Dspline,-The%20animation%20shows" target="_blank" rel="noopener">Fitting a B-spline</a> from the <strong>B-Spline Policy project website</strong>.</p>
         <div class="method-steps">
           <article><span class="step-label">01 / REPRESENT</span><h3>Predict a continuous trajectory</h3><p>A fixed window of cubic B-spline parameters decodes into a variable number of control steps.</p></article>
           <article><span class="step-label">02 / ALIGN</span><h3>See where precision matters</h3><p>Sample training video frames at fitted knot times, concentrating supervision around complex motion.</p></article>
@@ -105,7 +105,6 @@
         </div>
         <p class="table-note">Table 2. SR requires all task nodes; PG is the mean fraction of nodes reached. Chunk is the mean number of executed control steps per policy call, not a speedup in wall-clock time.</p>
         <p class="result-discussion">Naive RTC executes longer chunks but achieves lower SR and PG than JP-RTC on all three tasks. JP-RTC executes 1.2–1.6× more steps per call than action chunking; the largest success gain is on the highly compressible Clean Whiteboard task (+10.0 pp).</p>
-        <p class="result-limitation"><strong>Trade-off.</strong> On Charge Earphone, JP-RTC matches baseline success (26.7%) but reaches fewer task nodes on average (57.5% PG vs. 73.3%). Precise socket insertion remains a limitation.</p>
         <p class="video-note">Playback rates below are relative to the supplied recordings.</p>
         <div class="task-list">
           <article class="task-block">
@@ -158,21 +157,23 @@
           </table>
         </div>
         <p class="table-note">Table 1. Success is episode-weighted; calls count policy-model invocations. Steps/call counts executed control steps. Results are single-run point estimates.</p>
-        <p class="result-discussion">Removing video supervision from Naive B-Spline reduces success by <strong>10.7 pp on LIBERO-Plus</strong> and <strong>14.5 pp on RoboCasa</strong>.</p>
-        <div class="ablation-study"><h3>Execution Budget and Fitting Tolerance</h3><p>When varying the execution budget, SplineWAM matches the action-chunking baseline’s best success rate with <strong>2.2× fewer policy calls on RoboCasa</strong> and <strong>2.5× fewer on LIBERO-Plus</strong>. These are matched-success operating points from the ablation, distinct from the default settings above.</p><figure><button class="figure-button" type="button" data-figure="./static/images/ablations.webp" data-caption="Fitting tolerance and execution budget ablations on RoboCasa and LIBERO-Plus." aria-label="Enlarge ablation results"><img src="./static/images/ablations.webp" width="2600" height="1245" alt="Success versus fitting tolerance and execution budget on RoboCasa and LIBERO-Plus" loading="lazy"></button></figure></div>
+        <div class="ablation-study"><h3>Execution Budget and Fitting Tolerance</h3><p>When varying the execution budget, SplineWAM matches the action-chunking baseline’s best success rate with fewer policy calls on both RoboCasa and LIBERO-Plus. These are matched-success operating points from the ablation, distinct from the default settings above.</p><figure><button class="figure-button" type="button" data-figure="./static/images/ablations.webp" data-caption="Fitting tolerance and execution budget ablations on RoboCasa and LIBERO-Plus." aria-label="Enlarge ablation results"><img src="./static/images/ablations.webp" width="2600" height="1245" alt="Success versus fitting tolerance and execution budget on RoboCasa and LIBERO-Plus" loading="lazy"></button></figure></div>
       </div>
     </section>
     <section class="section section-tint" id="citation" aria-labelledby="citation-title">
       <div class="container">
         <div class="citation-heading"><h2 class="section-title" id="citation-title">Citation</h2><button type="button" class="copy-button" id="copy-citation"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></svg><span>Copy BibTeX</span></button></div>
-        <pre class="citation-code"><code id="bibtex">@unpublished{guo2026splinewam,
+        <pre class="citation-code"><code id="bibtex">@article{guo2026splinewam,
   title  = {SplineWAM: Adaptive Action Horizons for World Action
             Models via B-Spline Representations},
   author = {Guo, Jun and Han, Xiaoshen and Li, Qiwei and Sun, Nan
             and Li, Peiyan and Wang, Heyun and Lai, Hang
             and Zhang, Weinan and Li, Xinghang and Liu, Huaping},
-  note   = {Manuscript},
-  year   = {2026}
+  journal = {arXiv preprint arXiv:2609.39873},
+  year    = {2026},
+  eprint  = {2609.39873},
+  archivePrefix = {arXiv},
+  url     = {https://arxiv.org/abs/2609.39873}
 }</code></pre>
         <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
       </div>
